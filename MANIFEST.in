@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include soap_fingerprint *.css
+recursive-include soap_fingerprint *.csv
+recursive-include soap_fingerprint *.html
+recursive-include soap_fingerprint *.ico
+recursive-include soap_fingerprint *.js
+recursive-include soap_fingerprint *.json
+recursive-include soap_fingerprint *.md
+recursive-include soap_fingerprint *.png
+recursive-include soap_fingerprint *.py
+recursive-include soap_fingerprint *.svg
+recursive-include soap_fingerprint *.txt
+recursive-exclude soap_fingerprint *.pyc
