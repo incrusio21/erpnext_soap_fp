@@ -36,6 +36,18 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+fixtures = [
+	{
+		"dt": "Custom Field", 
+		"filters": [
+            ["name", "in", [
+					#employee
+					"Employee-fingerprint_pin"
+				]
+            ]
+		]
+	}
+]
 # Home Pages
 # ----------
 
@@ -106,23 +118,23 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"soap_fingerprint.tasks.all"
-#	],
-#	"daily": [
-#		"soap_fingerprint.tasks.daily"
-#	],
-#	"hourly": [
-#		"soap_fingerprint.tasks.hourly"
-#	],
-#	"weekly": [
-#		"soap_fingerprint.tasks.weekly"
-#	]
-#	"monthly": [
-#		"soap_fingerprint.tasks.monthly"
-#	]
-# }
+scheduler_events = {
+	# "all": [
+	# 	"soap_fingerprint.tasks.all"
+	# ],
+	# "daily": [
+	# 	"soap_fingerprint.tasks.daily"
+	# ],
+	"hourly_long": [
+		"soap_fingerprint.soap_fingerprint.doctype.fingerprint_log.fingerprint_log.create_emloyee_check_in"
+	],
+	# "weekly": [
+	# 	"soap_fingerprint.tasks.weekly"
+	# ]
+	# "monthly": [
+	# 	"soap_fingerprint.tasks.monthly"
+	# ]
+}
 
 # Testing
 # -------
