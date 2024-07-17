@@ -11,7 +11,8 @@ class FingerprintLog(Document):
 		if self.type != "Import Data Log":
 			return
 		
-		self.status = "Queued"
+		if not self.status:
+			self.status = "Queued"
 
 	@frappe.whitelist()
 	def create_attendance(self):

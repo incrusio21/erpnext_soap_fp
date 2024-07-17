@@ -48,6 +48,7 @@ fixtures = [
 		]
 	}
 ]
+
 # Home Pages
 # ----------
 
