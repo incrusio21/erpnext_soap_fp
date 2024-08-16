@@ -8,9 +8,13 @@
  "field_order": [
   "type",
   "machine_no",
+  "column_break_l5gf9",
+  "posting_date",
+  "posting_time",
   "status",
   "section_break_4mg0l",
-  "data"
+  "data",
+  "data_error"
  ],
  "fields": [
   {
@@ -31,19 +35,44 @@
   {
    "fieldname": "machine_no",
    "fieldtype": "Data",
-   "label": "Nomor Mesin"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nomor Mesin",
+   "read_only": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Data",
    "label": "Status",
    "read_only": 1
+  },
+  {
+   "fieldname": "data_error",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Data Error"
+  },
+  {
+   "fieldname": "column_break_l5gf9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time",
+   "read_only": 1
   }
  ],
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-09 20:56:14.838980",
+ "modified": "2024-08-15 12:35:29.092899",
  "modified_by": "Administrator",
  "module": "Soap Fingerprint",
  "name": "Fingerprint Log",
@@ -64,5 +93,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

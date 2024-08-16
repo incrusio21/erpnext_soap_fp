@@ -3,12 +3,14 @@
 
 frappe.ui.form.on('Fingerprint Log', {
 	refresh: function(frm) {
-		frm.add_custom_button(__('Re-sync'), function(){
-			frappe.call({
-				doc: frm.doc,
-				method: "create_attendance",
-				freeze: true
+		if(frm.doc.status != "Completed"){
+			frm.add_custom_button(__('Re-sync'), function(){
+				frappe.call({
+					doc: frm.doc,
+					method: "create_attendance",
+					freeze: true
+				})
 			})
-		})
+		}
 	}
 });
