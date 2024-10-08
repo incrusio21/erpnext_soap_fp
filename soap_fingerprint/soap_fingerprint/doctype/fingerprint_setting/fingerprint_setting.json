@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-07 11:16:48.955607",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attendance_create_by",
+  "batas_waktu_in_dari_shift",
+  "batas_waktu_out_dari_shift",
+  "batas_waktu_out_setelah_shift"
+ ],
+ "fields": [
+  {
+   "fieldname": "batas_waktu_in_dari_shift",
+   "fieldtype": "Int",
+   "label": "In Time by Shift"
+  },
+  {
+   "fieldname": "batas_waktu_out_dari_shift",
+   "fieldtype": "Int",
+   "label": "Out Time by Shift"
+  },
+  {
+   "fieldname": "attendance_create_by",
+   "fieldtype": "Select",
+   "label": "Attendance Create By",
+   "options": "Status\nShift Assignment"
+  },
+  {
+   "fieldname": "batas_waktu_out_setelah_shift",
+   "fieldtype": "Int",
+   "label": "Out Time After Shift"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-08 08:57:48.423975",
+ "modified_by": "Administrator",
+ "module": "Soap Fingerprint",
+ "name": "Fingerprint Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

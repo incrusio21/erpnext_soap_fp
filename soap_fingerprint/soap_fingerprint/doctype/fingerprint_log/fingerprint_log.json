@@ -49,7 +49,6 @@
   {
    "fieldname": "data_error",
    "fieldtype": "Code",
-   "hidden": 1,
    "label": "Data Error"
   },
   {
@@ -59,12 +58,14 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Posting Date",
    "read_only": 1
   },
   {
    "fieldname": "posting_time",
    "fieldtype": "Time",
+   "in_list_view": 1,
    "label": "Posting Time",
    "read_only": 1
   }
@@ -72,7 +73,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 12:35:29.092899",
+ "modified": "2024-09-06 11:16:52.649846",
  "modified_by": "Administrator",
  "module": "Soap Fingerprint",
  "name": "Fingerprint Log",
